@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package types.hello;
+package hello;
 
-option go_package = "types/hello";
+option go_package = "github.com/airztz/Protobuf4fun/types";
 option java_multiple_files = true;
 option java_package = "com.joy.grpc.types.hello";
 option java_outer_classname = "HelloProto";

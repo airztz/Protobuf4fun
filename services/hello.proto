@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-package services.hello;
+package hello;
 
 import "types/hello.proto";
 
-option go_package = "services/hello";
+option go_package = "github.com/airztz/Protobuf4fun/services";
 option java_multiple_files = true;
 option java_package = "com.joy.grpc.services.hello";
 option java_outer_classname = "HelloProto";
@@ -12,5 +12,5 @@ option java_outer_classname = "HelloProto";
 // The hello service definition.
 service Hello {
   // Sends a greeting
-  rpc SayHello (types.hello.HelloRequest) returns (types.hello.HelloReply) {}
+  rpc SayHello (hello.HelloRequest) returns (hello.HelloReply) {}
 }
