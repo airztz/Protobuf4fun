@@ -3,7 +3,7 @@
 .PHONY: generate-grpc-stub
 generate-grpc-stub:
 	protoc --go_out=plugins=grpc,paths=source_relative:. grpc/types/hello.proto
-	rotoc --go_out=plugins=grpc,paths=source_relative:. grpc/services/hello.proto
+	protoc --go_out=plugins=grpc,paths=source_relative:. grpc/services/hello.proto
 
 .PHONY: generate-rest-stub
 generate-rest-stub:
