@@ -93,8 +93,11 @@
     "typesHelloReply": {
       "type": "object",
       "properties": {
-        "message": {
+        "featureName": {
           "type": "string"
+        },
+        "complexFeatureValue": {
+          "$ref": "#/definitions/protobufAny"
         }
       },
       "title": "The response message containing the greetings"
@@ -102,10 +105,10 @@
     "typesHelloRequest": {
       "type": "object",
       "properties": {
-        "name": {
+        "featureName": {
           "type": "string"
         },
-        "complexValue": {
+        "complexFeatureValue": {
           "$ref": "#/definitions/protobufAny"
         },
         "complexStructValue": {

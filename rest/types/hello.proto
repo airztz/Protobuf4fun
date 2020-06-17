@@ -12,12 +12,13 @@ option java_outer_classname = "HelloRestType";
 
 // The request message containing the user's name.
 message HelloRequest {
-  string name = 1;
-  google.protobuf.Any complexValue = 2;
+  string featureName = 1;
+  google.protobuf.Any complexFeatureValue = 2;
   google.protobuf.Struct complexStructValue = 3;
 }
 
 // The response message containing the greetings
 message HelloReply {
-  string message = 1;
+    string featureName = 1;
+    google.protobuf.Any complexFeatureValue = 2;
 }
